@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_ffffff" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_weight="1"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:text="이전달"
+            android:background="#91ff85"/>
+
+        <Button
+            android:id="@+id/rightBtn"
+            android:layout_weight="2"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:text="다음달"
+            android:background="#91ff85"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#88C8ff"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/color_ffffff"
+        android:textSize="20sp" />
+
+    <GridView
+        android:layout_marginTop="10dp"
+        android:id="@+id/gridview"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:numColumns="7"
+        android:listSelector="@color/transparent"
+        android:tag="0"
+        >
+    </GridView>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="이번달 담배 소비 금액 : "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="건강을 해치는 담배 그래도 피우시겠습니까?"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/s"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="이번달 흡연한 횟수 : "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="로그인 화면으로 돌아가기"
+        android:textColor="@color/color_000000"
+        android:textSize="20sp" />
+
+</LinearLayout>
